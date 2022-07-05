@@ -16,19 +16,19 @@ Description: script-based utility to manage tmpfs folders
  Mostly useful for long-term usage of flash drives as system drive.
 
 Package: mergerfs
-Version: 2.32.6~debian-bullseye
+Version: 2.33.3~debian-bullseye
 Architecture: arm64
 Maintainer: Antonio SJ Musumeci <trapexit@spawn.link>
-Installed-Size: 553
+Installed-Size: 614
 Depends: libc6 (>= 2.28), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2), fuse
 Homepage: http://github.com/trapexit/mergerfs
 Priority: optional
 Section: utils
-Filename: pool/main/m/mergerfs/mergerfs_2.32.6~debian-bullseye_arm64.deb
-Size: 226068
-SHA256: 2352502704e69ec7d01a7e8fe3a873f19d535665d9c1367adb482fcc3063a6ae
-SHA1: df8f48cb140976076c21786215ad566bf125a47d
-MD5sum: 48dec0805cf7e12fcbc834cc3c0397be
+Filename: pool/main/m/mergerfs/mergerfs_2.33.3~debian-bullseye_arm64.deb
+Size: 244356
+SHA256: 91673271fcc69d1c3ae9eea19af2d01a22683a3874e83e1853570fc0e185fd25
+SHA1: 3d098bb1dcd5a6a491cd275540c794a2904083bf
+MD5sum: 32bf880a8389a34e3ec021b5cb1a61b3
 Description: another FUSE union filesystem
  mergerfs is a union filesystem geared towards simplifying storage and
  management of files across numerous commodity storage devices. It is
@@ -52,38 +52,38 @@ Description: anacron plugin for OpenMediaVault.
 Plugin-Section: utilities
 
 Package: openmediavault-apttool
-Version: 6.0
+Version: 6.0.1
 Architecture: all
 Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
-Installed-Size: 156
+Installed-Size: 161
 Depends: openmediavault (>= 6)
 Homepage: http://omv-extras.org/
 Priority: optional
 Section: net
-Filename: pool/main/o/openmediavault-apttool/openmediavault-apttool_6.0_all.deb
-Size: 12020
-SHA256: 59e2bb29552ae59cfa75a870cf0d77c0e6d84773ce5ed8ce458248eb19c6c0bb
-SHA1: bdd5a05df303b88e5a4f15f07b6334aa79136e98
-MD5sum: 35e97ec56fcf9ef193701f4b510352e9
+Filename: pool/main/o/openmediavault-apttool/openmediavault-apttool_6.0.1_all.deb
+Size: 12500
+SHA256: b02eb32479bf9ed3e012131868cdda751f9cb15f39963c2fba363f3645660b5e
+SHA1: c23efff8a36d98052027b0e7ba6ffeda179a7d2b
+MD5sum: 7ebe7af8fe311ce713ccf90b41774108
 Description: apt tool plugin for OpenMediaVault.
  Find, install, and remove packages in apt repositories.
 Plugin-Section: utilities
 
 Package: openmediavault-autoshutdown
-Version: 6.0.4
+Version: 6.0.8
 Architecture: all
 Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
-Installed-Size: 446
-Depends: fping, openmediavault (>= 6.0), pm-utils, sysstat, net-tools
+Installed-Size: 455
+Depends: fping, jq, net-tools, openmediavault (>= 6.0), pm-utils, sysstat
 Conflicts: autoshutdown
 Homepage: http://omv-extras.org
 Priority: optional
 Section: misc
-Filename: pool/main/o/openmediavault-autoshutdown/openmediavault-autoshutdown_6.0.4_all.deb
-Size: 42292
-SHA256: 86221faa369cd623312f60839fa2751e237eab85acea50351df91540a1a30458
-SHA1: ac43a11554171b1939cd15648e37f257a35ca10b
-MD5sum: 534e091c080b44504e03526a3e06ab40
+Filename: pool/main/o/openmediavault-autoshutdown/openmediavault-autoshutdown_6.0.8_all.deb
+Size: 45832
+SHA256: b67cbd1d1244fefc4e33cc7ac21a764e9d18737a32079602c6ae2a6d0e0eef08
+SHA1: c9dca4a929a388b19de1aa1ad3d9804c9b43305e
+MD5sum: 556b3213435b38f999927815b3d3e9a4
 Description: OpenMediaVault AutoShutdown Plugin
  Web interface for autoshutdown script.
  .
@@ -92,19 +92,19 @@ Description: OpenMediaVault AutoShutdown Plugin
 Plugin-Section: utilities
 
 Package: openmediavault-backup
-Version: 6.0
+Version: 6.0.5
 Architecture: all
 Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
-Installed-Size: 227
-Depends: fsarchiver, openmediavault (>= 6), borgbackup, rsync
+Installed-Size: 286
+Depends: fsarchiver, openmediavault (>= 6), borgbackup, rsync, fdisk
 Homepage: http://omv-extras.org/
 Priority: optional
 Section: misc
-Filename: pool/main/o/openmediavault-backup/openmediavault-backup_6.0_all.deb
-Size: 24420
-SHA256: f8f3ac7ce02effd860647ca5280f66da7bb047e705491c2cf898ac2c3994160b
-SHA1: f0aaa5d6101129705c5c4c96c1198b01766c55fa
-MD5sum: b0c13923f651aa83d2ca2fe878d6789f
+Filename: pool/main/o/openmediavault-backup/openmediavault-backup_6.0.5_all.deb
+Size: 28664
+SHA256: 4c63d18f3c858cb4192cd6289579db9aea6610368eb9a19bf02a91b48375591e
+SHA1: d202dc73e34d64b9b0013a039b8f7237fd8dff9b
+MD5sum: c0bcb43b783bbd5814366763c7d67e0e
 Description: backup plugin for OpenMediaVault.
  This plugin will backup the entire OpenMediaVault
  system minus data drives or system drive for
@@ -112,37 +112,99 @@ Description: backup plugin for OpenMediaVault.
 Plugin-Section: backup
 
 Package: openmediavault-borgbackup
-Version: 6.0
+Version: 6.1.3
 Architecture: all
 Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
-Installed-Size: 308
-Depends: openmediavault (>= 6), borgbackup (>= 1.1.0)
+Installed-Size: 316
+Depends: openmediavault (>= 6), python3-llfuse, borgbackup (>= 1.1.0)
 Priority: optional
 Section: net
-Filename: pool/main/o/openmediavault-borgbackup/openmediavault-borgbackup_6.0_all.deb
-Size: 24532
-SHA256: f2678140ab6cf4ab248b45d0fd603a26cf12621245e70fac1e068430cbeb5e30
-SHA1: 7da4ad60a1c9e98cd7cdb34b4c93e5899358d050
-MD5sum: 387c8db13dd6b9e7443dfe55ec91f7d2
+Filename: pool/main/o/openmediavault-borgbackup/openmediavault-borgbackup_6.1.3_all.deb
+Size: 24496
+SHA256: 534b76cb3d3fa7ecf3cacecf99eb00985becb19949252a4be9d32abbb03b2b42
+SHA1: 45b4450b797f83d8c17e8b1299d9e7d96447207b
+MD5sum: 687e8d9442863b73abb5c5872e223fe2
 Description: borgbackup plugin for OpenMediaVault.
  BorgBackup is a deduplicating backup program.
  Optionally, it supports compression and authenticated
  encryption.
 Plugin-Section: backup
 
-Package: openmediavault-fail2ban
+Package: openmediavault-compose
+Version: 6.0.2
+Architecture: all
+Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
+Installed-Size: 64
+Depends: docker-ce | docker.io, docker-compose-plugin | docker-compose, openmediavault (>= 6.0.30)
+Homepage: http://omv-extras.org/
+Priority: optional
+Section: net
+Filename: pool/main/o/openmediavault-compose/openmediavault-compose_6.0.2_all.deb
+Size: 6984
+SHA256: ac7250e13b489bcdbe75fc7fe50dde30b2d694190ce18c3e1be1b7f55639721d
+SHA1: e63033e350423eb2cf7af3d0caf95c35efafb589
+MD5sum: d0ad593be3d201c22b906759d2d5e874
+Description: OpenMediaVault compose plugin
+ lightweight plugin to maintain and execute docker-compose files.
+Plugin-Section: utilities
+
+Package: openmediavault-cputemp
+Version: 6.1.1
+Architecture: all
+Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
+Installed-Size: 21
+Depends: openmediavault (>= 6.0.13)
+Homepage: http://omv-extras.org/
+Priority: optional
+Section: net
+Filename: pool/main/o/openmediavault-cputemp/openmediavault-cputemp_6.1.1_all.deb
+Size: 3268
+SHA256: 8a5de0ce398c9c53d9a07a3af3b3fbf38400ae4821ea3c9daff20bca88386628
+SHA1: 8ac747d74364af1b0d249d7067799057215835a1
+MD5sum: e9b1295f9934bf73ca188f8c0087b0f2
+Description: cpu temperature plugin for openmediavault
+Plugin-Section: filesystems
+
+Package: openmediavault-downloader
 Version: 6.0.1
 Architecture: all
 Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
-Installed-Size: 237
+Installed-Size: 194
+Depends: aria2, curl, openmediavault (>= 6), python3, wget
+Homepage: http://omv-extras.org/
+Priority: optional
+Section: net
+Filename: pool/main/o/openmediavault-downloader/openmediavault-downloader_6.0.1_all.deb
+Size: 17424
+SHA256: b887835e6590e9e9fb28b714386f650e2a9029669586b7ded06d54f554bef23f
+SHA1: 046bd00ca275a51b0e23254fc38eef2c8f4e8b77
+MD5sum: 5c67731e9793d784207e317d4b1dd5c7
+Description: OpenMediaVault downloader plugin
+ Plugin to download files to a specified share using aria2, curl, or
+ yt-dlp.
+ .
+ aria2 is a lightweight multi-protocol & multi-source command-line
+ download utility. It supports HTTP/HTTPS, FTP, BitTorrent and Metalink.
+ .
+ curl is a command line tool for transferring data with URL syntax
+ .
+ yt-dlp is a small command-line program to download videos from
+ YouTube.com and a few more sites (forked from youtube-dl).
+Plugin-Section: downloaders
+
+Package: openmediavault-fail2ban
+Version: 6.0.2
+Architecture: all
+Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
+Installed-Size: 238
 Depends: fail2ban, openmediavault (>= 6), whois
 Priority: optional
 Section: devel
-Filename: pool/main/o/openmediavault-fail2ban/openmediavault-fail2ban_6.0.1_all.deb
-Size: 19728
-SHA256: ee358a0737b6cf12a5941d6d0856f2f0c07f34afcfdfbb6f7cb199acdc8cd038
-SHA1: cf578d5bcdc7ce797e0e0ebbfb7bc9f7b3b5bd83
-MD5sum: 740e989cdb19c39e17a4de5249acdacc
+Filename: pool/main/o/openmediavault-fail2ban/openmediavault-fail2ban_6.0.2_all.deb
+Size: 19900
+SHA256: 52d5e348cb9c24324004c8edcd14b63047f56e597612326d3ab916b02c67a6b0
+SHA1: 0939ff0ac67ae0a447cde8d84832fe28b0f9eaec
+MD5sum: b12acdf0309ee2cc5db418dbc8e844b4
 Description: OpenMediaVault Fail2ban plugin
  Protect OMV with Fail2ban. Fail2ban scans log files and bans IPs that
  show the malicious signs -- too many password failures, seeking for
@@ -150,19 +212,19 @@ Description: OpenMediaVault Fail2ban plugin
 Plugin-Section: network
 
 Package: openmediavault-flashmemory
-Version: 6.0.2
+Version: 6.2
 Architecture: all
 Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
-Installed-Size: 29
+Installed-Size: 37
 Depends: folder2ram (>= 0.3.1), openmediavault (>= 6.0)
 Homepage: http://omv-extras.org/
 Priority: optional
 Section: net
-Filename: pool/main/o/openmediavault-flashmemory/openmediavault-flashmemory_6.0.2_all.deb
-Size: 4840
-SHA256: a9299fc7c900eb3b44175703060d261cc47738204363f9e10cd80a5809c27cb8
-SHA1: a1189b222b345918283aa0e379941a8d0f313594
-MD5sum: 32a7e47543cb7b8c6f88835d6d0bff2e
+Filename: pool/main/o/openmediavault-flashmemory/openmediavault-flashmemory_6.2_all.deb
+Size: 5880
+SHA256: 8ebde67a2525df090caeaf2985bcac0be2473cad2d98d0f194931149068382a2
+SHA1: 4df06e08ebc828fadb3117cbf441e80509202f6d
+MD5sum: 47245e733d9083f06cbb37f92a8779ab
 Description: folder2ram plugin for openmediavault
  folder2ram manages temporary file systems across reboots, to decrease writes on permanent storage.
  This allows the installation of OMV on flash thumb drives and SD cards.
@@ -192,6 +254,23 @@ Description: kernel package
    - SystemRescue
 Plugin-Section: utilities
 
+Package: openmediavault-kvm
+Version: 6.1.19
+Architecture: all
+Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
+Installed-Size: 781
+Depends: dnsmasq-base, ksmtuned, libosinfo-bin, libvirt-clients, libvirt-daemon, libvirt-daemon-system, netcat-openbsd, novnc, openmediavault (>= 6.0.30), openmediavault-sharerootfs, osinfo-db, osinfo-db-tools, ovmf, php-libvirt-php, php-xml, python3-websockify, qemu, qemu-efi, qemu-efi-aarch64, qemu-efi-arm, qemu-system-arm, qemu-system-data, qemu-system-mips, qemu-system-ppc, qemu-system-x86, qemu-utils, spice-html5, uuid, virtinst
+Homepage: http://omv-extras.org/
+Priority: optional
+Section: net
+Filename: pool/main/o/openmediavault-kvm/openmediavault-kvm_6.1.19_all.deb
+Size: 55120
+SHA256: 1cced9b9dde873af8fc9ef3f17e880141bcdeb3a757b2d5c255e66af1f8fb5aa
+SHA1: 86b3301e00d62ab614aa93d30b4145d4bbcc5b05
+MD5sum: a00282ef3011cbb3f20f69a2f6da8065
+Description: kvm plugin for OpenMediaVault.
+Plugin-Section: utilities
+
 Package: openmediavault-locate
 Version: 6.0
 Architecture: all
@@ -210,20 +289,42 @@ Description: locate plugin for OpenMediaVault.
  Locate file on system using search term.
 Plugin-Section: utilities
 
-Package: openmediavault-mergerfs
-Version: 6.0.5
+Package: openmediavault-luksencryption
+Version: 6.0
 Architecture: all
 Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
-Installed-Size: 86
-Depends: mergerfs, openmediavault (>= 6)
+Installed-Size: 307
+Depends: busybox, coreutils, cryptsetup, cryptsetup-bin, openmediavault (>= 6.0.10)
+Priority: optional
+Section: admin
+Filename: pool/main/o/openmediavault-luksencryption/openmediavault-luksencryption_6.0_all.deb
+Size: 27380
+SHA256: 7c5f3d5cd54f27c5d3cf3355818426e3b9b940b9057bf42457e2eb3a92c464a6
+SHA1: 1dbc8874d5097bc440805458d3b379ebc8498214
+MD5sum: b7dfc388a95b8cbcfd138d3a2e3d1a87
+Description: OpenMediaVault LUKS encryption plugin
+ LUKS is the standard for Linux hard disk encryption. By providing a
+ standard on-disk-format, it not only facilitates compatibility
+ among distributions, but also provides secure management of multiple
+ user passwords. In contrast to existing solutions, LUKS stores all
+ necessary setup information in the partition header, enabling the
+ user to transport or migrate his data seamlessly.
+Plugin-Section: filesystems
+
+Package: openmediavault-mergerfs
+Version: 6.1.1
+Architecture: all
+Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
+Installed-Size: 285
+Depends: libarchive-zip-perl, mergerfs, openmediavault (>= 6)
 Replaces: omvextras-unionbackend, openmediavault-mergerfsfolders, openmediavault-unionfilesystems
 Priority: optional
 Section: net
-Filename: pool/main/o/openmediavault-mergerfs/openmediavault-mergerfs_6.0.5_all.deb
-Size: 12096
-SHA256: 1d95b3ca49e211d8e18425903df0ebba82f1549e92e078b3a85979d2b321d7a3
-SHA1: 98ec3348fd0dfc3a018e126474ae1394976fa21e
-MD5sum: 3ecb9ac657c22968d58eb5924fa8be41
+Filename: pool/main/o/openmediavault-mergerfs/openmediavault-mergerfs_6.1.1_all.deb
+Size: 25140
+SHA256: d2f28356e4556e82747d0040fc6423114116da7156ca2c47b73a77b9f9ec3837
+SHA1: 92924b172f9953b6fcba3382e125cd087c61f475
+MD5sum: 175393702b898f54d58f60e2272091ab
 Description: mergerfs plugin for openmediavault.
  Makes it possible to pool folders under a single mountpoint with mergerfs.
 Plugin-Section: filesystems
@@ -258,20 +359,20 @@ Description: OpenMediaVault miniDLNA (DLNA server) plugin
 Plugin-Section: multimedia
 
 Package: openmediavault-omvextrasorg
-Version: 6.0.4
+Version: 6.1
 Architecture: all
 Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
-Installed-Size: 528
+Installed-Size: 599
 Depends: dirmngr, gnupg, openmediavault (>= 6.0)
 Breaks: openmediavault (<< 6.0)
 Homepage: http://omv-extras.org/
 Priority: optional
 Section: net
-Filename: pool/main/o/openmediavault-omvextrasorg/openmediavault-omvextrasorg_6.0.4_all.deb
-Size: 60432
-SHA256: 69cff5f74a1a4636a19dd3835ea075e78496564c09eece826120af9f67aafd60
-SHA1: c564691bd8b941a0449c038f4619782c95a7559a
-MD5sum: 6955cc2e4920a15a2b4ccf01f4c1d306
+Filename: pool/main/o/openmediavault-omvextrasorg/openmediavault-omvextrasorg_6.1_all.deb
+Size: 59344
+SHA256: d6e1da055e4c3b25813945ec264f63f64f0cd6fbf38f321a89f35a9b94f74c3e
+SHA1: 2b80979d2d0ed7d3d9a48f03e0e1fa2b62921cb4
+MD5sum: 891dd9bc4a49317b48fc520306d99ff3
 Description: OMV-Extras.org Package Repositories for OpenMediaVault
  Allows enabling of multiple repositories hosted by omv-extras.org.
  .
@@ -281,6 +382,23 @@ Description: OMV-Extras.org Package Repositories for OpenMediaVault
  An apt cleaning function is also available for fixing repository cache
  problems and saving hard drive space in some instances.
 Plugin-Section: utilities
+
+Package: openmediavault-remotemount
+Version: 6.0.1
+Architecture: all
+Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
+Installed-Size: 211
+Depends: cifs-utils, davfs2, openmediavault (>= 6.0.7)
+Priority: optional
+Section: net
+Filename: pool/main/o/openmediavault-remotemount/openmediavault-remotemount_6.0.1_all.deb
+Size: 19652
+SHA256: 71cd49a6317bda26dd3ebe12c2879ab0a4f3fa0560505e5871634b70a442346a
+SHA1: 4f183c86b70497d85b31ec739ffe75b593c7e5b9
+MD5sum: b2fd9ea642f6d93be87d4bba1b7b4a03
+Description: Remote mount plugin for OpenMediaVault.
+ Makes it possible to mount remote shares.
+Plugin-Section: filesystems
 
 Package: openmediavault-resetperms
 Version: 6.0
@@ -303,19 +421,19 @@ Description: Reset Permissions
 Plugin-Section: utilities
 
 Package: openmediavault-rsnapshot
-Version: 6.0
+Version: 6.0.2
 Architecture: all
 Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
-Installed-Size: 230
+Installed-Size: 238
 Depends: openmediavault (>= 6), rsnapshot
 Homepage: http://omv-extras.org
 Priority: optional
 Section: net
-Filename: pool/main/o/openmediavault-rsnapshot/openmediavault-rsnapshot_6.0_all.deb
-Size: 22908
-SHA256: 0d3189de7f18a870164258d278029bee4e45c5caa6272773ec9b4756c4ee7f38
-SHA1: a03641fb7fb4984df2280bf111add89a91ea1094
-MD5sum: 36a68524736d022552fcd5b6fa4bf752
+Filename: pool/main/o/openmediavault-rsnapshot/openmediavault-rsnapshot_6.0.2_all.deb
+Size: 24116
+SHA256: 2d18dc70b499ac5a18c1871a22ef48676abb06b7441623772f1ec6eba8d5ab40
+SHA1: 00eeb6c4190d12b385b388734687a0053f0462a6
+MD5sum: cf338786c6b1e4d4198b3ee5f82d45c0
 Description: OpenMediaVault rsnapshot backup plugin.
  Configures Backups by using rsnapshot, allowing rotating
  incremental backups.
@@ -340,19 +458,19 @@ Description: sftp server
 Plugin-Section: network
 
 Package: openmediavault-snapraid
-Version: 6.0.2
+Version: 6.0.4
 Architecture: all
 Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
-Installed-Size: 366
+Installed-Size: 387
 Depends: openmediavault (>= 6.0), snapraid (>= 11.5)
 Homepage: https://omv-extras.org/
 Priority: optional
 Section: net
-Filename: pool/main/o/openmediavault-snapraid/openmediavault-snapraid_6.0.2_all.deb
-Size: 34448
-SHA256: 5050ad06acaa79a5f5778980a43a4f0d24d42277108c98418398ff6f07a25e60
-SHA1: 15a95028f89a3fc112fe90684dccfef2673b5fce
-MD5sum: a519a1d6b3f1d75bbb61015d724222e0
+Filename: pool/main/o/openmediavault-snapraid/openmediavault-snapraid_6.0.4_all.deb
+Size: 37856
+SHA256: 57a67a3624bc50b9556ef235081654ab6541b760eca7197e5b32a4a1ce7c06e5
+SHA1: 9142255066c7db0d7561b6c090cf2895bb6711b8
+MD5sum: 5a2e3236535b9f51298b6de079753e0e
 Description: snapraid plugin for OpenMediaVault.
  SnapRAID is a backup program for disk arrays. It stores parity
  information of your data and it's able to recover from up to two
@@ -376,53 +494,53 @@ Description: snapraid plugin for OpenMediaVault.
 Plugin-Section: filesystems
 
 Package: openmediavault-symlinks
-Version: 6.0
+Version: 6.0.4
 Architecture: all
 Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
-Installed-Size: 42
-Depends: openmediavault (>= 6.0)
+Installed-Size: 44
+Depends: openmediavault (>= 6.0), openmediavault-sharerootfs
 Homepage: http://omv-extras.org/
 Priority: optional
 Section: net
-Filename: pool/main/o/openmediavault-symlinks/openmediavault-symlinks_6.0_all.deb
-Size: 5876
-SHA256: effd8fd92b8610d530b38e0729871417aa2159d546b7cb51f37b1eab4086c6d8
-SHA1: 69c972852319318a7a66d1ff0dff6ef2268bb432
-MD5sum: a5a02b82ebf1f6649e92856ebe2dc815
+Filename: pool/main/o/openmediavault-symlinks/openmediavault-symlinks_6.0.4_all.deb
+Size: 6592
+SHA256: cec811d73319e6c2519ffdadf836a1f6d73059244232cdbe668b9f959123e461
+SHA1: 349bb510f5b0979c509eecf2f65276b11dd88d32
+MD5sum: 6926eb9747bb1a3a7580ff403ef14292
 Description: OpenMediaVault symlinks plugin
  Allow creation of symlinks.
 Plugin-Section: filesystems
 
 Package: openmediavault-tgt
-Version: 6.0.0
+Version: 6.0.4
 Architecture: all
 Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
 Installed-Size: 80
-Depends: tgt, openmediavault (>= 6.0)
+Depends: tgt, openmediavault (>= 6.0), openmediavault-sharerootfs
 Priority: optional
 Section: devel
-Filename: pool/main/o/openmediavault-tgt/openmediavault-tgt_6.0.0_all.deb
-Size: 9132
-SHA256: 5934adf263466c0046bbc4a5a9b55179fc5fb0cfe4a374c0c06b3d8fbc2aaba2
-SHA1: 27db025dd7a06bd16454e45231218bef07149132
-MD5sum: c4a94c470e2edff32b549b53625398f5
+Filename: pool/main/o/openmediavault-tgt/openmediavault-tgt_6.0.4_all.deb
+Size: 9428
+SHA256: ef87d41a4d86b9b82c0279836ec386af69ca07cc05d0ef59ea06e0625da4db50
+SHA1: e194d4590b1e24f5a8d7e68bffcf6f441ab1f3e4
+MD5sum: ad9510ad43cfcd2150fc88f156fdc94c
 Description: OpenMediaVault tgt plugin
  Plugin to setup tgt iscsi targets.
 Plugin-Section: network
 
 Package: openmediavault-wakealarm
-Version: 6.0
+Version: 6.0.1
 Architecture: all
 Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
-Installed-Size: 174
+Installed-Size: 177
 Depends: openmediavault (>= 6.0.2), python3-croniter
 Priority: optional
 Section: net
-Filename: pool/main/o/openmediavault-wakealarm/openmediavault-wakealarm_6.0_all.deb
-Size: 13972
-SHA256: 0c00120db8bf1a8559b70fdc6591603e49627e4c2c0815a9d9783ceb6ad2f406
-SHA1: 77dcbb0a75452c3fd79cb095061b51da737dbbc5
-MD5sum: 4fd70ada6bb86c84ef270815f2a31e46
+Filename: pool/main/o/openmediavault-wakealarm/openmediavault-wakealarm_6.0.1_all.deb
+Size: 14596
+SHA256: a0b5ac0de6d6975dfd57c3e0cee5837330b881d8b87665aea2e0cdec50b8c635
+SHA1: a95efa3c87aeceb8387aaac9a802448888806040
+MD5sum: d3096f47eb77409a9a811c3cc6884c32
 Description: wakealarm plugin for OpenMediaVault.
  Schedule times to wake machine using wakealarm
 Plugin-Section: utilities
@@ -445,6 +563,31 @@ Description: OpenMediaVault WOL plugin
  Plugin to send wake-on-lan magic packets and put system in standby
  to wake at a specified time using rtcwake and wakeonlan.
 Plugin-Section: utilities
+
+Package: openmediavault-zfs
+Version: 6.0.9
+Architecture: arm64
+Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
+Installed-Size: 543
+Depends: libzfs4linux, openmediavault (>= 6.0.12), zfs-zed
+Homepage: http://omv-extras.org/
+Priority: optional
+Section: net
+Filename: pool/main/o/openmediavault-zfs/openmediavault-zfs_6.0.9_arm64.deb
+Size: 57184
+SHA256: e07d13c76b544443c8a1efe4ba6ddf8b81c710155a3c3bc611e48bc10e0988c7
+SHA1: 60759976e5a58a9312967e4c4c87222cb49ae351
+MD5sum: 655300e66a33025a6adf2898be728197
+Description: OpenMediaVault plugin for ZFS
+ ZFS is a combined file system and logical volume manager designed
+ by Sun Microsystems. The features of ZFS include protection against
+ data corruption, support for high storage capacities, efficient data
+ compression, integration of the concepts of filesystem and volume
+ management, snapshots and copy-on-write clones, continuous integrity
+ checking and automatic repair, RAID-Z and native NFSv4 ACLs.
+ .
+ The native Linux kernel port of the ZFS filesystem.
+Plugin-Section: filesystems
 
 Package: rsnapshot
 Version: 1.4.3-2

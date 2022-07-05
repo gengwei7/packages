@@ -1,0 +1,53 @@
+Package: openmediavault-diskclone
+Version: 6.0
+Architecture: all
+Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
+Installed-Size: 28
+Depends: fsarchiver, openmediavault (>= 6)
+Homepage: http://omv-extras.org/
+Priority: optional
+Section: misc
+Filename: pool/main/o/openmediavault-diskclone/openmediavault-diskclone_6.0_all.deb
+Size: 4188
+SHA256: c6d5a8420d0f979eab481ffa370428e357f656ddfdee19702ab2c21ad401dfe7
+SHA1: 212bb93f43e2ccb3fd0998d1e2c4f0c32c28f1fb
+MD5sum: bf973807833c3624a85db96861f90732
+Description: disk clone plugin for OpenMediaVault.
+ This plugin will clone one disk to another.
+Plugin-Section: backup
+
+Package: openmediavault-kvm
+Version: 6.1.5
+Architecture: all
+Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
+Installed-Size: 714
+Depends: dnsmasq-base, ksmtuned, libosinfo-bin, libvirt-clients, libvirt-daemon, libvirt-daemon-system, netcat-openbsd, novnc, openmediavault (>= 6.0.13), openmediavault-sharerootfs, osinfo-db, osinfo-db-tools, ovmf, php-libvirt-php, php-xml, python3-websockify, qemu, qemu-efi, qemu-efi-aarch64, qemu-efi-arm, qemu-system-arm, qemu-system-data, qemu-system-mips, qemu-system-ppc, qemu-system-x86, qemu-utils, spice-html5, uuid, virtinst
+Homepage: http://omv-extras.org/
+Priority: optional
+Section: net
+Filename: pool/main/o/openmediavault-kvm/openmediavault-kvm_6.1.5_all.deb
+Size: 52204
+SHA256: f24ee75637ec2caee58149fabac0969d314becde9b521a1120846f583a493183
+SHA1: 1b76aa8fbd6e166fd657aa1f869905e91eb6cf21
+MD5sum: 6a950a4948270335794b1c0096b5eddc
+Description: kvm plugin for OpenMediaVault.
+Plugin-Section: utilities
+
+Package: openmediavault-mergerfs
+Version: 6.0.10
+Architecture: all
+Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
+Installed-Size: 95
+Depends: libarchive-zip-perl, mergerfs, openmediavault (>= 6)
+Replaces: omvextras-unionbackend, openmediavault-mergerfsfolders, openmediavault-unionfilesystems
+Priority: optional
+Section: net
+Filename: pool/main/o/openmediavault-mergerfs/openmediavault-mergerfs_6.0.10_all.deb
+Size: 13496
+SHA256: 87eb63d992dd1ff3cc65a7e3a12acff33b819dbd94929fc1691c35246d95cf65
+SHA1: 7e06782e7b0548c03329d4b7339b746672cd8aa6
+MD5sum: 1d67e9b7137943e237907a3d6e08e1bc
+Description: mergerfs plugin for openmediavault.
+ Makes it possible to pool folders under a single mountpoint with mergerfs.
+Plugin-Section: filesystems
+
